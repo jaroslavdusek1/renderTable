@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display table</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- <div id="app">App</div> -->
+    <header div class="head">
+      <nav>
+        <div>
+          <img src="img/logo.png" alt="Robotic logo" class="logo" />
+        </div>
+      </nav>
+    </header>
+
+    <section class="inpBtn">
+      <label class="custom-field">
+        <input type="number" id="min" min="0" required />
+        <span class="placeholder">Min value</span>
+      </label>
+
+      <label class="custom-field">
+        <input type="number" id="max" min="0" required />
+        <span class="placeholder">Max value</span>
+      </label>
+      <p class="note">* Max value must be higher than Min value.</p>
+      <br />
+      <button type="button" class="btn-render" onclick="renderData();">
+        Render
+      </button>
+
+      <button type="button" class="btn-remove" onclick="remove()">
+        Remove
+      </button>
+
+      <!-- <button type="button" onclick="getInputValue();">Get Value</button> -->
+    </section>
+
+    <table id="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+
+      <!-- <tbody id="tableData"></tbody> //Created in script -->
+    </table>
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">iOs App</a></li>
+        <li><a href="#">Android App</a></li>
+      </ul>
+      <p>© 2021 Robot ICT All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
